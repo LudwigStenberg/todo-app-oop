@@ -2,12 +2,11 @@
 
 public class HelpCommand : Command
 {
-    public HelpCommand(string name, Program program) : base(name, program)
-    {
-    }
+    public HelpCommand(string name, Program program)
+        : base("help", program) { }
 
     public override void Execute(string[] commandArgs)
     {
-        throw new NotImplementedException();
+        Console.WriteLine("");
     }
 }
