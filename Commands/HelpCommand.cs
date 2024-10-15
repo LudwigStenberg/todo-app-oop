@@ -1,12 +1,13 @@
-﻿namespace todo_app_oop;
-
-public class HelpCommand : Command
+﻿public class HelpCommand : Command
 {
     public HelpCommand(string name, Program program)
         : base("help", program) { }
 
     public override void Execute(string[] commandArgs)
     {
-        Console.WriteLine("");
+        Console.WriteLine("List of commands: ");
+        Console.WriteLine("create-task <title>");
+        Console.WriteLine("remove-task <title>");
+        Console.WriteLine("search-task <title>");
     }
 }
