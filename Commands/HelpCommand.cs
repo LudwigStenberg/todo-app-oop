@@ -5,6 +5,7 @@
 
     public override void Execute(string[] commandArgs)
     {
+        Console.Clear();
         Console.WriteLine("List of commands: ");
         Console.WriteLine("create-task <title>");
         Console.WriteLine("remove-task <title>");
